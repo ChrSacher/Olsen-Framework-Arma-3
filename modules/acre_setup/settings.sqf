@@ -43,40 +43,40 @@ FW_enable_channel_names = false;
 
 FW_ChannelNames = [
 	[//WEST - USE SIDE SETTINGS ONLY IF SCRAMBLE IS ON
-		["1", "label", "PLTNET 1"],
-		["2", "label", "PLTNET 2"],
-		["3", "label", "PLTNET 3"],
-		["4", "label", "PLTNET 4"],
-		["5", "label", "COY"],
-		["6", "label", "CAS"],
-		["7", "label", "FIRES"]
+		[1, "label", "PLTNET 1"],
+		[2, "label", "PLTNET 2"],
+		[3, "label", "PLTNET 3"],
+		[4, "label", "PLTNET 4"],
+		[5, "label", "COY"],
+		[6, "label", "CAS"],
+		[7, "label", "FIRES"]
 	],
 	[//EAST
-		["1", "label", "PLTNET 1"],
-		["2", "label", "PLTNET 2"],
-		["3", "label", "PLTNET 3"],
-		["4", "label", "PLTNET 4"],
-		["5", "label", "COY"],
-		["6", "label", "CAS"],
-		["7", "label", "FIRES"]
+		[1, "label", "PLTNET 1"],
+		[2, "label", "PLTNET 2"],
+		[3, "label", "PLTNET 3"],
+		[4, "label", "PLTNET 4"],
+		[5, "label", "COY"],
+		[6, "label", "CAS"],
+		[7, "label", "FIRES"]
 	],
 	[//INDEPENDENT
-		["1", "label", "PLTNET 1"],
-		["2", "label", "PLTNET 2"],
-		["3", "label", "PLTNET 3"],
-		["4", "label", "PLTNET 4"],
-		["5", "label", "COY"],
-		["6", "label", "CAS"],
-		["7", "label", "FIRES"]
+		[1, "label", "PLTNET 1"],
+		[2, "label", "PLTNET 2"],
+		[3, "label", "PLTNET 3"],
+		[4, "label", "PLTNET 4"],
+		[5, "label", "COY"],
+		[6, "label", "CAS"],
+		[7, "label", "FIRES"]
 	],
 	[//DEFAULT - USE THIS IF SCRAMBLE IS OFF
-		["1", "label", "PLTNET 1"],
-		["2", "label", "PLTNET 2"],
-		["3", "label", "PLTNET 3"],
-		["4", "label", "PLTNET 4"],
-		["5", "label", "COY"],
-		["6", "label", "CAS"],
-		["7", "label", "FIRES"]
+		[1, "label", "PLTNET 1"],
+		[2, "label", "PLTNET 2"],
+		[3, "label", "PLTNET 3"],
+		[4, "label", "PLTNET 4"],
+		[5, "label", "COY"],
+		[6, "label", "CAS"],
+		[7, "label", "FIRES"]
 	]
 ];
 
@@ -126,35 +126,45 @@ FW_languages_babel = [
 */
 
 /*Specify and value between 1.0 and 0. Setting it to 0 means the terrain loss model is disabled, 1 is default.
-  Note this setting only effects loss caused by terrain, loss due to power dissipation over range will always occur.*/
+  Note this setting only effects loss caused by terrain, loss due to power dissipation over range will always occur.
+  Replaced by CBA MISSION SETTING
+  */
 
-//[0.0] call acre_api_fnc_setLossModelScale;
+
 
 
 /*Sets the duplex of radio transmissions.
-  If set to true, it means that you will receive transmissions even while talking and multiple people can speak at the same time.*/
+  If set to true, it means that you will receive transmissions even while talking and multiple people can speak at the same time.
+  Replaced by CBA MISSION SETTING
+  */
 
-//[false] call acre_api_fnc_setFullDuplex;
+
 
 
 /*Sets whether transmissions will interfere with each other.
-  This, by default, causes signal loss when multiple people are transmitting on the same frequency.*/
+  This, by default, causes signal loss when multiple people are transmitting on the same frequency.
+  Replaced by CBA MISSION SETTING
+  */
 
-//[false] call acre_api_fnc_setInterference;
+
 
 
 /*Sets whether AI can detect players speaking.
   This utilizes an advanced model of inverse-square volume detection and randomization against the range of the unit, and duration and quantity of speaking.
-  In a nutshell, the closer you are to an AI unit and the more you speak - the better chance he has of hearing you.*/
+  In a nutshell, the closer you are to an AI unit and the more you speak - the better chance he has of hearing you.
+  Replaced by CBA MISSION SETTING
+  */
 
-//[false] call acre_api_fnc_setRevealToAI;
+
 
 
 /*This setting can be used to disable the simulation of antenna radiation patterns for both the transmitting and receiving radios.
-  It will make all antennas act with perfect omni-directional behaviour. (true/false)*/
+  It will make all antennas act with perfect omni-directional behaviour. (true/false)
+  Replaced by CBA MISSION SETTING
+  */
 
 
-//[true] call acre_api_fnc_ignoreAntennaDirection;
+
 
 
 /*
